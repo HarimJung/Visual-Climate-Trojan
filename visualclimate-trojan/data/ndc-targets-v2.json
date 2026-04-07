@@ -1,0 +1,557 @@
+{
+  "metadata": {
+    "version": "2.0",
+    "generated_at": "2026-04-07",
+    "source": "UNFCCC NDC Registry + Climate Watch + Climate Action Tracker",
+    "total_countries": 20,
+    "changes_from_v1": "Added NDC 3.0 fields (target_year_2035, target_pct_reduction_2035, ndc3_submitted, ndc3_submission_date)"
+  },
+  "targets": {
+    "KOR": {
+      "country_name": "South Korea",
+      "ndc_2030": {
+        "target_year": 2030,
+        "target_pct_reduction": 40,
+        "reference_year": 2018,
+        "reference_type": "absolute",
+        "reference_emissions_MtCO2eq": 727.6,
+        "target_emissions_MtCO2eq": 436.6,
+        "conditional": false,
+        "submission_status": "updated",
+        "notes": "Updated NDC (2021): 40% reduction from 2018 levels by 2030"
+      },
+      "ndc_2035": {
+        "ndc3_submitted": false,
+        "target_year": 2035,
+        "target_pct_reduction": null,
+        "reference_year": null,
+        "reference_type": null,
+        "ndc3_submission_date": null,
+        "notes": "NDC 3.0 not yet submitted as of 2026-04-07. Expected to align with net-zero 2050."
+      },
+      "net_zero": {
+        "target_year": 2050,
+        "legal_status": "in_law",
+        "law_name": "Carbon Neutrality and Green Growth Framework Act (2021)"
+      },
+      "cat_rating": "Highly_insufficient"
+    },
+    "USA": {
+      "country_name": "United States",
+      "ndc_2030": {
+        "target_year": 2030,
+        "target_pct_reduction": 50,
+        "reference_year": 2005,
+        "reference_type": "absolute",
+        "reference_emissions_MtCO2eq": 7417,
+        "target_emissions_MtCO2eq": 3709,
+        "conditional": false,
+        "submission_status": "updated",
+        "notes": "NDC (2021): 50-52% reduction from 2005 levels by 2030; using lower bound 50%"
+      },
+      "ndc_2035": {
+        "ndc3_submitted": false,
+        "target_year": 2035,
+        "target_pct_reduction": null,
+        "reference_year": null,
+        "reference_type": null,
+        "ndc3_submission_date": null,
+        "notes": "NDC 3.0 status uncertain under current administration."
+      },
+      "net_zero": {
+        "target_year": 2050,
+        "legal_status": "pledge",
+        "law_name": null
+      },
+      "cat_rating": "Insufficient"
+    },
+    "DEU": {
+      "country_name": "Germany",
+      "ndc_2030": {
+        "target_year": 2030,
+        "target_pct_reduction": 65,
+        "reference_year": 1990,
+        "reference_type": "absolute",
+        "reference_emissions_MtCO2eq": 1251,
+        "target_emissions_MtCO2eq": 438,
+        "conditional": false,
+        "submission_status": "updated",
+        "notes": "German Climate Protection Act (2021): 65% from 1990; part of EU NDC (55% EU-wide)"
+      },
+      "ndc_2035": {
+        "ndc3_submitted": true,
+        "target_year": 2035,
+        "target_pct_reduction": 78,
+        "reference_year": 1990,
+        "reference_type": "absolute",
+        "ndc3_submission_date": "2025-02-14",
+        "notes": "EU NDC 3.0 (Feb 2025): 90% net reduction by 2040 (EU-wide). Germany national: 78% by 2035 (Climate Protection Act)."
+      },
+      "net_zero": {
+        "target_year": 2045,
+        "legal_status": "in_law",
+        "law_name": "Federal Climate Change Act (Bundes-Klimaschutzgesetz), amended 2021"
+      },
+      "cat_rating": "Insufficient"
+    },
+    "CHN": {
+      "country_name": "China",
+      "ndc_2030": {
+        "target_year": 2030,
+        "target_pct_reduction": 65,
+        "reference_year": 2005,
+        "reference_type": "intensity",
+        "conditional": false,
+        "submission_status": "updated",
+        "notes": "Updated NDC (2021): 65% carbon intensity reduction from 2005 by 2030; peak before 2030"
+      },
+      "ndc_2035": {
+        "ndc3_submitted": false,
+        "target_year": 2035,
+        "target_pct_reduction": null,
+        "reference_year": null,
+        "reference_type": null,
+        "ndc3_submission_date": null,
+        "notes": "NDC 3.0 not yet submitted. Expected intensity-based target."
+      },
+      "net_zero": {
+        "target_year": 2060,
+        "legal_status": "pledge",
+        "law_name": null
+      },
+      "cat_rating": "Highly_insufficient"
+    },
+    "IND": {
+      "country_name": "India",
+      "ndc_2030": {
+        "target_year": 2030,
+        "target_pct_reduction": 45,
+        "reference_year": 2005,
+        "reference_type": "intensity",
+        "conditional": false,
+        "submission_status": "updated",
+        "notes": "Updated NDC (2022): 45% carbon intensity reduction from 2005 by 2030"
+      },
+      "ndc_2035": {
+        "ndc3_submitted": false,
+        "target_year": 2035,
+        "target_pct_reduction": null,
+        "reference_year": null,
+        "reference_type": null,
+        "ndc3_submission_date": null,
+        "notes": "NDC 3.0 not yet submitted."
+      },
+      "net_zero": {
+        "target_year": 2070,
+        "legal_status": "pledge",
+        "law_name": null
+      },
+      "cat_rating": "Highly_insufficient"
+    },
+    "JPN": {
+      "country_name": "Japan",
+      "ndc_2030": {
+        "target_year": 2030,
+        "target_pct_reduction": 46,
+        "reference_year": 2013,
+        "reference_type": "absolute",
+        "conditional": false,
+        "submission_status": "updated",
+        "notes": "Updated NDC (2021): 46% reduction from 2013 levels by 2030"
+      },
+      "ndc_2035": {
+        "ndc3_submitted": true,
+        "target_year": 2035,
+        "target_pct_reduction": 60,
+        "reference_year": 2013,
+        "reference_type": "absolute",
+        "ndc3_submission_date": "2025-02-04",
+        "notes": "NDC 3.0 (Feb 2025): 60% reduction from 2013 levels by 2035"
+      },
+      "net_zero": {
+        "target_year": 2050,
+        "legal_status": "in_law",
+        "law_name": "Act on Promotion of Global Warming Countermeasures (amended 2021)"
+      },
+      "cat_rating": "Insufficient"
+    },
+    "GBR": {
+      "country_name": "United Kingdom",
+      "ndc_2030": {
+        "target_year": 2030,
+        "target_pct_reduction": 68,
+        "reference_year": 1990,
+        "reference_type": "absolute",
+        "conditional": false,
+        "submission_status": "updated",
+        "notes": "NDC (2020): 68% reduction from 1990 levels by 2030"
+      },
+      "ndc_2035": {
+        "ndc3_submitted": true,
+        "target_year": 2035,
+        "target_pct_reduction": 81,
+        "reference_year": 1990,
+        "reference_type": "absolute",
+        "ndc3_submission_date": "2025-02-04",
+        "notes": "NDC 3.0 (Feb 2025): 81% reduction from 1990 by 2035 (aligned with 6th Carbon Budget)"
+      },
+      "net_zero": {
+        "target_year": 2050,
+        "legal_status": "in_law",
+        "law_name": "Climate Change Act 2008 (amended 2019)"
+      },
+      "cat_rating": "Insufficient"
+    },
+    "BRA": {
+      "country_name": "Brazil",
+      "ndc_2030": {
+        "target_year": 2030,
+        "target_pct_reduction": 50,
+        "reference_year": 2005,
+        "reference_type": "absolute",
+        "conditional": false,
+        "submission_status": "updated",
+        "notes": "Updated NDC (2023): 50% reduction from 2005 levels by 2030"
+      },
+      "ndc_2035": {
+        "ndc3_submitted": true,
+        "target_year": 2035,
+        "target_pct_reduction": 67,
+        "reference_year": 2005,
+        "reference_type": "absolute",
+        "ndc3_submission_date": "2025-02-10",
+        "notes": "NDC 3.0 (Feb 2025): 59-67% reduction from 2005 by 2035; using upper bound 67%"
+      },
+      "net_zero": {
+        "target_year": 2050,
+        "legal_status": "in_policy",
+        "law_name": null
+      },
+      "cat_rating": "Insufficient"
+    },
+    "CAN": {
+      "country_name": "Canada",
+      "ndc_2030": {
+        "target_year": 2030,
+        "target_pct_reduction": 40,
+        "reference_year": 2005,
+        "reference_type": "absolute",
+        "conditional": false,
+        "submission_status": "updated",
+        "notes": "Updated NDC (2021): 40-45% from 2005 by 2030; using lower bound"
+      },
+      "ndc_2035": {
+        "ndc3_submitted": false,
+        "target_year": 2035,
+        "target_pct_reduction": null,
+        "reference_year": null,
+        "reference_type": null,
+        "ndc3_submission_date": null,
+        "notes": "NDC 3.0 not yet submitted."
+      },
+      "net_zero": {
+        "target_year": 2050,
+        "legal_status": "in_law",
+        "law_name": "Canadian Net-Zero Emissions Accountability Act (2021)"
+      },
+      "cat_rating": "Insufficient"
+    },
+    "AUS": {
+      "country_name": "Australia",
+      "ndc_2030": {
+        "target_year": 2030,
+        "target_pct_reduction": 43,
+        "reference_year": 2005,
+        "reference_type": "absolute",
+        "conditional": false,
+        "submission_status": "updated",
+        "notes": "Updated NDC (2022): 43% reduction from 2005 by 2030"
+      },
+      "ndc_2035": {
+        "ndc3_submitted": false,
+        "target_year": 2035,
+        "target_pct_reduction": null,
+        "reference_year": null,
+        "reference_type": null,
+        "ndc3_submission_date": null,
+        "notes": "NDC 3.0 not yet submitted."
+      },
+      "net_zero": {
+        "target_year": 2050,
+        "legal_status": "in_law",
+        "law_name": "Climate Change Act 2022"
+      },
+      "cat_rating": "Insufficient"
+    },
+    "FRA": {
+      "country_name": "France",
+      "ndc_2030": {
+        "target_year": 2030,
+        "target_pct_reduction": 55,
+        "reference_year": 1990,
+        "reference_type": "absolute",
+        "conditional": false,
+        "submission_status": "updated",
+        "notes": "EU NDC (2020): 55% net reduction from 1990 (EU-wide)"
+      },
+      "ndc_2035": {
+        "ndc3_submitted": true,
+        "target_year": 2035,
+        "target_pct_reduction": null,
+        "reference_year": null,
+        "reference_type": null,
+        "ndc3_submission_date": "2025-02-14",
+        "notes": "Part of EU NDC 3.0: 90% net reduction by 2040 (EU-wide). National 2035 breakdown TBD."
+      },
+      "net_zero": {
+        "target_year": 2050,
+        "legal_status": "in_law",
+        "law_name": "Loi Énergie-Climat (2019)"
+      },
+      "cat_rating": "Insufficient"
+    },
+    "IDN": {
+      "country_name": "Indonesia",
+      "ndc_2030": {
+        "target_year": 2030,
+        "target_pct_reduction": 32,
+        "reference_year": null,
+        "reference_type": "bau",
+        "conditional": false,
+        "submission_status": "updated",
+        "notes": "Enhanced NDC (2022): 31.89% unconditional below BAU by 2030"
+      },
+      "ndc_2035": {
+        "ndc3_submitted": false,
+        "target_year": 2035,
+        "target_pct_reduction": null,
+        "reference_year": null,
+        "reference_type": null,
+        "ndc3_submission_date": null,
+        "notes": "NDC 3.0 not yet submitted."
+      },
+      "net_zero": {
+        "target_year": 2060,
+        "legal_status": "in_policy",
+        "law_name": null
+      },
+      "cat_rating": "Highly_insufficient"
+    },
+    "NGA": {
+      "country_name": "Nigeria",
+      "ndc_2030": {
+        "target_year": 2030,
+        "target_pct_reduction": 47,
+        "reference_year": null,
+        "reference_type": "bau",
+        "conditional": false,
+        "submission_status": "submitted",
+        "notes": "NDC (2021): 47% unconditional below BAU by 2030"
+      },
+      "ndc_2035": {
+        "ndc3_submitted": false,
+        "target_year": 2035,
+        "target_pct_reduction": null,
+        "reference_year": null,
+        "reference_type": null,
+        "ndc3_submission_date": null,
+        "notes": "NDC 3.0 not yet submitted."
+      },
+      "net_zero": {
+        "target_year": 2060,
+        "legal_status": "pledge",
+        "law_name": null
+      },
+      "cat_rating": "Highly_insufficient"
+    },
+    "BGD": {
+      "country_name": "Bangladesh",
+      "ndc_2030": {
+        "target_year": 2030,
+        "target_pct_reduction": 22,
+        "reference_year": null,
+        "reference_type": "bau",
+        "conditional": false,
+        "submission_status": "updated",
+        "notes": "Updated NDC (2021): 22% unconditional below BAU by 2030"
+      },
+      "ndc_2035": {
+        "ndc3_submitted": false,
+        "target_year": 2035,
+        "target_pct_reduction": null,
+        "reference_year": null,
+        "reference_type": null,
+        "ndc3_submission_date": null,
+        "notes": "NDC 3.0 not yet submitted."
+      },
+      "net_zero": {
+        "target_year": null,
+        "legal_status": "none",
+        "law_name": null
+      },
+      "cat_rating": null
+    },
+    "ZAF": {
+      "country_name": "South Africa",
+      "ndc_2030": {
+        "target_year": 2030,
+        "target_pct_reduction": 32,
+        "reference_year": null,
+        "reference_type": "absolute",
+        "conditional": false,
+        "submission_status": "updated",
+        "notes": "Updated NDC (2021): 350-420 MtCO2e by 2030; ~32% below current"
+      },
+      "ndc_2035": {
+        "ndc3_submitted": false,
+        "target_year": 2035,
+        "target_pct_reduction": null,
+        "reference_year": null,
+        "reference_type": null,
+        "ndc3_submission_date": null,
+        "notes": "NDC 3.0 not yet submitted."
+      },
+      "net_zero": {
+        "target_year": 2050,
+        "legal_status": "in_policy",
+        "law_name": null
+      },
+      "cat_rating": "Highly_insufficient"
+    },
+    "MEX": {
+      "country_name": "Mexico",
+      "ndc_2030": {
+        "target_year": 2030,
+        "target_pct_reduction": 35,
+        "reference_year": null,
+        "reference_type": "bau",
+        "conditional": false,
+        "submission_status": "submitted",
+        "notes": "NDC (2020): 35% unconditional GHG reduction below BAU by 2030"
+      },
+      "ndc_2035": {
+        "ndc3_submitted": false,
+        "target_year": 2035,
+        "target_pct_reduction": null,
+        "reference_year": null,
+        "reference_type": null,
+        "ndc3_submission_date": null,
+        "notes": "NDC 3.0 not yet submitted."
+      },
+      "net_zero": {
+        "target_year": 2050,
+        "legal_status": "pledge",
+        "law_name": null
+      },
+      "cat_rating": "Critically_insufficient"
+    },
+    "RUS": {
+      "country_name": "Russia",
+      "ndc_2030": {
+        "target_year": 2030,
+        "target_pct_reduction": 30,
+        "reference_year": 1990,
+        "reference_type": "absolute",
+        "conditional": false,
+        "submission_status": "updated",
+        "notes": "Updated NDC (2020): 70% of 1990 levels by 2030 (30% reduction)"
+      },
+      "ndc_2035": {
+        "ndc3_submitted": false,
+        "target_year": 2035,
+        "target_pct_reduction": null,
+        "reference_year": null,
+        "reference_type": null,
+        "ndc3_submission_date": null,
+        "notes": "NDC 3.0 not expected given current geopolitical situation."
+      },
+      "net_zero": {
+        "target_year": 2060,
+        "legal_status": "in_policy",
+        "law_name": null
+      },
+      "cat_rating": "Critically_insufficient"
+    },
+    "SAU": {
+      "country_name": "Saudi Arabia",
+      "ndc_2030": {
+        "target_year": 2030,
+        "target_pct_reduction": 19,
+        "reference_year": null,
+        "reference_type": "bau",
+        "conditional": false,
+        "submission_status": "submitted",
+        "notes": "NDC (2021): 278 MtCO2e annual abatement by 2030; ~19% below BAU"
+      },
+      "ndc_2035": {
+        "ndc3_submitted": false,
+        "target_year": 2035,
+        "target_pct_reduction": null,
+        "reference_year": null,
+        "reference_type": null,
+        "ndc3_submission_date": null,
+        "notes": "NDC 3.0 not yet submitted."
+      },
+      "net_zero": {
+        "target_year": 2060,
+        "legal_status": "pledge",
+        "law_name": null
+      },
+      "cat_rating": "Critically_insufficient"
+    },
+    "TUR": {
+      "country_name": "Turkey",
+      "ndc_2030": {
+        "target_year": 2030,
+        "target_pct_reduction": 41,
+        "reference_year": null,
+        "reference_type": "bau",
+        "conditional": false,
+        "submission_status": "updated",
+        "notes": "Updated NDC (2023): 41% reduction below BAU by 2030"
+      },
+      "ndc_2035": {
+        "ndc3_submitted": false,
+        "target_year": 2035,
+        "target_pct_reduction": null,
+        "reference_year": null,
+        "reference_type": null,
+        "ndc3_submission_date": null,
+        "notes": "NDC 3.0 not yet submitted."
+      },
+      "net_zero": {
+        "target_year": 2053,
+        "legal_status": "pledge",
+        "law_name": null
+      },
+      "cat_rating": "Critically_insufficient"
+    },
+    "EGY": {
+      "country_name": "Egypt",
+      "ndc_2030": {
+        "target_year": 2030,
+        "target_pct_reduction": 33,
+        "reference_year": null,
+        "reference_type": "bau",
+        "conditional": false,
+        "submission_status": "updated",
+        "notes": "Updated NDC (2022): 33% reduction below BAU in electricity sector by 2030"
+      },
+      "ndc_2035": {
+        "ndc3_submitted": false,
+        "target_year": 2035,
+        "target_pct_reduction": null,
+        "reference_year": null,
+        "reference_type": null,
+        "ndc3_submission_date": null,
+        "notes": "NDC 3.0 not yet submitted."
+      },
+      "net_zero": {
+        "target_year": null,
+        "legal_status": "none",
+        "law_name": null
+      },
+      "cat_rating": "Highly_insufficient"
+    }
+  }
+}

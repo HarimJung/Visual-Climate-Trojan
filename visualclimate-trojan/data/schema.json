@@ -1,0 +1,234 @@
+{
+  "schema_version": "1.0",
+  "last_updated": "2026-04-07",
+  "description": "23 core indicators for the Climate Intelligence Engine. Maps to existing Supabase indicator_codes where available.",
+  "indicator_groups": {
+    "emissions": {
+      "total_ghg_excl_lulucf": {
+        "label": "Total GHG emissions (excl. LULUCF)",
+        "unit": "MtCO2eq",
+        "gwp": "AR5",
+        "primary_source": "EDGAR",
+        "secondary_source": "CLIMATE_TRACE",
+        "supabase_code": "WB.EN.ATM.GHGT.KT.CE",
+        "supabase_unit_conversion": "kt_to_Mt: value / 1000",
+        "cross_check_threshold_pct": 10,
+        "tableau_field": "total_ghg",
+        "notes": "WB stores in kt CO2eq. Convert to Mt for reports. EDGAR and CT cross-check."
+      },
+      "co2_fossil": {
+        "label": "CO2 from fossil fuels and industry",
+        "unit": "MtCO2",
+        "primary_source": "EDGAR",
+        "secondary_source": "OWID",
+        "supabase_code": "WB.EN.ATM.CO2E.KT",
+        "supabase_unit_conversion": "kt_to_Mt: value / 1000",
+        "tableau_field": "co2_fossil"
+      },
+      "ch4_total": {
+        "label": "Total methane emissions",
+        "unit": "MtCO2eq",
+        "gwp": "AR5",
+        "primary_source": "EDGAR",
+        "supabase_code": null,
+        "tableau_field": "ch4_total",
+        "notes": "Not in current Supabase. Add via EDGAR ETL. CH4 in CO2eq = CH4(Mt) × 28"
+      },
+      "ghg_per_capita": {
+        "label": "GHG per capita",
+        "unit": "tCO2eq/capita",
+        "derived_from": ["total_ghg_excl_lulucf", "population"],
+        "formula": "total_ghg_excl_lulucf * 1000000 / population",
+        "supabase_code": "WB.EN.ATM.CO2E.PC",
+        "supabase_note": "WB has CO2/capita only, not full GHG/capita. Derive from total_ghg + pop.",
+        "tableau_field": "ghg_per_capita",
+        "tableau_calc": "[total_ghg] * 1000000 / [population]"
+      },
+      "ghg_intensity": {
+        "label": "GHG intensity of GDP",
+        "unit": "kgCO2eq/USD GDP PPP",
+        "derived_from": ["total_ghg_excl_lulucf", "gdp_ppp"],
+        "formula": "total_ghg_excl_lulucf * 1e9 / gdp_ppp",
+        "supabase_code": "DERIVED.CO2_PER_GDP",
+        "tableau_field": "ghg_intensity",
+        "tableau_calc": "[total_ghg] * 1000000000 / [gdp_ppp]"
+      },
+      "sector_energy_pct": {
+        "label": "Energy sector share of total GHG",
+        "unit": "%",
+        "primary_source": "EDGAR",
+        "supabase_code": "CTRACE.POWER",
+        "supabase_note": "CTRACE has power sector only. EDGAR has full energy sector.",
+        "tableau_field": "sector_energy_pct"
+      },
+      "sector_industry_pct": {
+        "label": "Industrial processes share",
+        "unit": "%",
+        "primary_source": "EDGAR",
+        "supabase_code": "CTRACE.MANUFACTURING",
+        "tableau_field": "sector_industry_pct"
+      },
+      "sector_agriculture_pct": {
+        "label": "Agriculture share",
+        "unit": "%",
+        "primary_source": "EDGAR",
+        "supabase_code": "CTRACE.AGRICULTURE",
+        "tableau_field": "sector_agriculture_pct"
+      },
+      "sector_waste_pct": {
+        "label": "Waste share",
+        "unit": "%",
+        "primary_source": "EDGAR",
+        "supabase_code": "CTRACE.WASTE",
+        "tableau_field": "sector_waste_pct"
+      },
+      "ghg_10yr_trend_pct": {
+        "label": "10-year GHG emission trend",
+        "unit": "%",
+        "derived_from": ["total_ghg_excl_lulucf"],
+        "formula": "((value_latest / value_10yr_prior) - 1) * 100",
+        "supabase_code": null,
+        "tableau_field": "ghg_10yr_trend",
+        "tableau_calc": "(LOOKUP([total_ghg], 0) / LOOKUP([total_ghg], -10) - 1) * 100"
+      }
+    },
+    "energy": {
+      "renewable_share_electricity": {
+        "label": "Renewable share of electricity generation",
+        "unit": "%",
+        "primary_source": "IRENA",
+        "secondary_source": "EMBER",
+        "supabase_code": "WB.EG.FEC.RNEW.ZS",
+        "supabase_note": "WB has renewable share of final energy, not electricity. IRENA/Ember preferred.",
+        "tableau_field": "re_share_elec"
+      },
+      "fossil_share_primary_energy": {
+        "label": "Fossil fuel share of primary energy",
+        "unit": "%",
+        "primary_source": "OWID",
+        "supabase_code": null,
+        "tableau_field": "fossil_share_pe",
+        "notes": "Available in data/owid-energy-data.csv column: fossil_share_energy"
+      },
+      "coal_phaseout_status": {
+        "label": "Coal phase-out commitment status",
+        "unit": "text",
+        "primary_source": "Global Coal Plant Tracker",
+        "values": ["committed", "under_discussion", "no_commitment", "expanding"],
+        "supabase_code": null,
+        "tableau_field": "coal_phaseout"
+      }
+    },
+    "policy": {
+      "ndc30_submitted": {
+        "label": "NDC 3.0 (2025 round) submitted",
+        "unit": "boolean",
+        "primary_source": "UNFCCC NDC Registry",
+        "supabase_code": null,
+        "tableau_field": "ndc30_submitted"
+      },
+      "ndc_2030_target": {
+        "label": "2030 NDC target description",
+        "unit": "text",
+        "primary_source": "CLIMATE_WATCH",
+        "supabase_code": null,
+        "tableau_field": null,
+        "notes": "Text field — not for Tableau chart, used in reports only"
+      },
+      "ndc_2035_target": {
+        "label": "2035 NDC target description",
+        "unit": "text",
+        "primary_source": "UNFCCC NDC Registry",
+        "supabase_code": null,
+        "tableau_field": null,
+        "notes": "NDC 3.0 specific. Text field for reports."
+      },
+      "net_zero_target_year": {
+        "label": "Net-zero target year",
+        "unit": "year",
+        "primary_source": "Net Zero Tracker",
+        "supabase_code": null,
+        "tableau_field": "nz_year"
+      },
+      "net_zero_legal_status": {
+        "label": "Legal status of net-zero target",
+        "unit": "text",
+        "values": ["in_law", "in_policy", "pledge", "none"],
+        "primary_source": "Net Zero Tracker",
+        "supabase_code": null,
+        "tableau_field": "nz_legal"
+      },
+      "cat_rating": {
+        "label": "Climate Action Tracker overall rating",
+        "unit": "text",
+        "primary_source": "CAT",
+        "values": [
+          "1.5C_compatible",
+          "Almost_sufficient",
+          "Insufficient",
+          "Highly_insufficient",
+          "Critically_insufficient"
+        ],
+        "supabase_code": null,
+        "tableau_field": "cat_rating",
+        "notes": "CAT covers ~40 countries only. Others = [NOT RATED]"
+      }
+    },
+    "vulnerability": {
+      "ndgain_rank": {
+        "label": "ND-GAIN Country Index rank",
+        "unit": "rank (1=best)",
+        "primary_source": "NDGAIN",
+        "supabase_code": "NDGAIN.RANK",
+        "tableau_field": "ndgain_rank"
+      },
+      "ndgain_vulnerability": {
+        "label": "ND-GAIN Vulnerability score",
+        "unit": "score (0-1, higher=more vulnerable)",
+        "primary_source": "NDGAIN",
+        "supabase_code": "NDGAIN.VULNERABILITY",
+        "tableau_field": "ndgain_vuln"
+      },
+      "ndgain_readiness": {
+        "label": "ND-GAIN Readiness score",
+        "unit": "score (0-1, higher=more ready)",
+        "primary_source": "NDGAIN",
+        "supabase_code": "NDGAIN.READINESS",
+        "tableau_field": "ndgain_ready"
+      }
+    },
+    "context": {
+      "population": {
+        "label": "Population",
+        "unit": "persons",
+        "primary_source": "WORLD_BANK_WDI",
+        "supabase_code": "WB.SP.POP.TOTL",
+        "tableau_field": "population"
+      },
+      "gdp_ppp": {
+        "label": "GDP (PPP, current international $)",
+        "unit": "USD",
+        "primary_source": "WORLD_BANK_WDI",
+        "supabase_code": "WB.NY.GDP.MKTP.PP.CD",
+        "tableau_field": "gdp_ppp"
+      },
+      "income_group": {
+        "label": "World Bank income group",
+        "unit": "text",
+        "values": ["High income", "Upper middle income", "Lower middle income", "Low income"],
+        "primary_source": "WORLD_BANK_WDI",
+        "supabase_table": "countries",
+        "supabase_column": "income_group",
+        "tableau_field": "income_group"
+      },
+      "region": {
+        "label": "World Bank region",
+        "unit": "text",
+        "primary_source": "WORLD_BANK_WDI",
+        "supabase_table": "countries",
+        "supabase_column": "region",
+        "tableau_field": "region"
+      }
+    }
+  }
+}

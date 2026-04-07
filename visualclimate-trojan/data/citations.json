@@ -1,0 +1,137 @@
+{
+  "citations_version": "1.0",
+  "last_updated": "2026-04-07",
+  "citations": {
+    "IPCC_AR6_WG1": {
+      "title": "Climate Change 2021: The Physical Science Basis",
+      "authors": "IPCC Working Group I",
+      "year": 2021,
+      "publisher": "Cambridge University Press",
+      "doi": "10.1017/9781009157896",
+      "url": "https://www.ipcc.ch/report/ar6/wg1/",
+      "use_in_project": "GWP values (Table 7.15), warming projections, carbon budget",
+      "key_facts": {
+        "gwp_ch4_100yr": 27.9,
+        "gwp_n2o_100yr": 273,
+        "remaining_carbon_budget_1_5C_500Gt": "500 GtCO2 from 2020 (50% probability)"
+      }
+    },
+    "IPCC_AR6_WG3": {
+      "title": "Climate Change 2022: Mitigation of Climate Change",
+      "authors": "IPCC Working Group III",
+      "year": 2022,
+      "publisher": "Cambridge University Press",
+      "doi": "10.1017/9781009157926",
+      "url": "https://www.ipcc.ch/report/ar6/wg3/",
+      "use_in_project": "Sectoral mitigation pathways, 1.5°C/2°C scenarios, technology costs",
+      "key_facts": {
+        "global_ghg_2019": "59 GtCO2eq (AR6 GWP)",
+        "1_5C_requires": "43% reduction by 2030 vs 2019",
+        "2C_requires": "27% reduction by 2030 vs 2019"
+      }
+    },
+    "IPCC_AR5_GWP": {
+      "title": "Climate Change 2013: The Physical Science Basis — Table 8.7",
+      "authors": "IPCC Working Group I",
+      "year": 2013,
+      "url": "https://www.ipcc.ch/report/ar5/wg1/",
+      "use_in_project": "Standard GWP basis for this project (AR5)",
+      "key_facts": {
+        "gwp_ch4_100yr": 28,
+        "gwp_n2o_100yr": 265,
+        "gwp_sf6_100yr": 23500
+      }
+    },
+    "UNEP_EGR_2024": {
+      "title": "Emissions Gap Report 2024: No More Hot Air — Please!",
+      "authors": "UNEP",
+      "year": 2024,
+      "url": "https://www.unep.org/resources/emissions-gap-report-2024",
+      "use_in_project": "Global emissions gap, NDC ambition assessment, G20 analysis",
+      "key_facts": {
+        "global_ghg_2023": "57.1 GtCO2eq (excl. LULUCF)",
+        "ndc_gap_2030": "Unconditional NDCs leave 20-23 GtCO2eq gap for 1.5°C",
+        "g20_share": "G20 accounts for ~77% of global GHG"
+      }
+    },
+    "WMO_STATE_2024": {
+      "title": "WMO State of the Global Climate 2024",
+      "authors": "World Meteorological Organization",
+      "year": 2025,
+      "url": "https://wmo.int/publication/state-of-global-climate-2024",
+      "use_in_project": "Temperature records, climate indicators, extreme events",
+      "key_facts": {
+        "global_mean_temp_2024": "1.55°C above pre-industrial (1850-1900)",
+        "warmest_year": "2024 confirmed warmest on record",
+        "ocean_heat_content": "Record high in 2024"
+      }
+    },
+    "EDGAR_2025": {
+      "title": "EDGAR — Emissions Database for Global Atmospheric Research, GHG emissions of all world countries, 2025 Report",
+      "authors": "Crippa, M., Guizzardi, D., et al.",
+      "year": 2025,
+      "publisher": "European Commission, JRC",
+      "doi": "10.2760/812002",
+      "url": "https://edgar.jrc.ec.europa.eu/report_2025",
+      "use_in_project": "Primary source for historical GHG emissions by country/sector",
+      "key_facts": {
+        "global_ghg_2024": "53.2 GtCO2eq (excl. LULUCF, AR5 GWP)",
+        "co2_fossil_2024": "37.4 GtCO2"
+      }
+    },
+    "GCP_2024": {
+      "title": "Global Carbon Budget 2024",
+      "authors": "Friedlingstein, P., et al.",
+      "year": 2024,
+      "doi": "10.5194/essd-16-5567-2024",
+      "url": "https://globalcarbonbudget.org/",
+      "use_in_project": "CO2 fossil emissions, land-use emissions, carbon sinks",
+      "key_facts": {
+        "co2_fossil_2024": "37.4 GtCO2",
+        "co2_lulucf_2024": "4.2 GtCO2",
+        "atmospheric_growth_2024": "2.8 ppm"
+      }
+    },
+    "CAT_METHODOLOGY": {
+      "title": "Climate Action Tracker — Methodology",
+      "authors": "Climate Analytics & NewClimate Institute",
+      "year": 2024,
+      "url": "https://climateactiontracker.org/methodology/",
+      "use_in_project": "Country NDC ratings, fair share assessment",
+      "key_facts": {
+        "rating_scale": [
+          "1.5C compatible",
+          "Almost sufficient",
+          "Insufficient",
+          "Highly insufficient",
+          "Critically insufficient"
+        ],
+        "countries_covered": 40
+      }
+    },
+    "NDGAIN_METHODOLOGY": {
+      "title": "ND-GAIN Country Index Technical Report",
+      "authors": "University of Notre Dame",
+      "year": 2023,
+      "url": "https://gain.nd.edu/our-work/country-index/methodology/",
+      "use_in_project": "Vulnerability/readiness scoring methodology",
+      "key_facts": {
+        "vulnerability_sectors": ["food", "water", "health", "ecosystem", "habitat", "infrastructure"],
+        "readiness_components": ["economic", "governance", "social"],
+        "score_range": "0-100 (higher=better prepared)"
+      }
+    },
+    "PARIS_AGREEMENT": {
+      "title": "Paris Agreement",
+      "authors": "UNFCCC",
+      "year": 2015,
+      "url": "https://unfccc.int/process-and-meetings/the-paris-agreement",
+      "use_in_project": "1.5°C/2°C targets, NDC framework, Article references",
+      "key_facts": {
+        "temperature_goal": "Well below 2°C, pursuing 1.5°C",
+        "ndc_cycle": "Every 5 years with progression",
+        "ndc3_deadline": "February 2025 (10 years from NDC2)"
+      }
+    }
+  }
+}

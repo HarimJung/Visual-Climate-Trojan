@@ -1,0 +1,81 @@
+ISO3,country_name,year,indicator_code,value,unit,source
+KOR,"South Korea",2014,WB.EN.ATM.GHGT.KT.CE,690800,kt CO2eq,World Bank WDI
+KOR,"South Korea",2015,WB.EN.ATM.GHGT.KT.CE,693200,kt CO2eq,World Bank WDI
+KOR,"South Korea",2016,WB.EN.ATM.GHGT.KT.CE,694500,kt CO2eq,World Bank WDI
+KOR,"South Korea",2017,WB.EN.ATM.GHGT.KT.CE,709100,kt CO2eq,World Bank WDI
+KOR,"South Korea",2018,WB.EN.ATM.GHGT.KT.CE,727600,kt CO2eq,World Bank WDI
+KOR,"South Korea",2019,WB.EN.ATM.GHGT.KT.CE,701300,kt CO2eq,World Bank WDI
+KOR,"South Korea",2020,WB.EN.ATM.GHGT.KT.CE,656100,kt CO2eq,World Bank WDI
+KOR,"South Korea",2021,WB.EN.ATM.GHGT.KT.CE,676800,kt CO2eq,World Bank WDI
+KOR,"South Korea",2022,WB.EN.ATM.GHGT.KT.CE,664500,kt CO2eq,World Bank WDI
+KOR,"South Korea",2023,WB.EN.ATM.GHGT.KT.CE,656200,kt CO2eq,World Bank WDI
+KOR,"South Korea",2014,WB.EN.ATM.CO2E.PC,11.58,t CO2/capita,World Bank WDI
+KOR,"South Korea",2015,WB.EN.ATM.CO2E.PC,11.62,t CO2/capita,World Bank WDI
+KOR,"South Korea",2016,WB.EN.ATM.CO2E.PC,11.74,t CO2/capita,World Bank WDI
+KOR,"South Korea",2017,WB.EN.ATM.CO2E.PC,12.05,t CO2/capita,World Bank WDI
+KOR,"South Korea",2018,WB.EN.ATM.CO2E.PC,12.31,t CO2/capita,World Bank WDI
+KOR,"South Korea",2019,WB.EN.ATM.CO2E.PC,11.85,t CO2/capita,World Bank WDI
+KOR,"South Korea",2020,WB.EN.ATM.CO2E.PC,10.98,t CO2/capita,World Bank WDI
+KOR,"South Korea",2021,WB.EN.ATM.CO2E.PC,11.42,t CO2/capita,World Bank WDI
+KOR,"South Korea",2022,WB.EN.ATM.CO2E.PC,11.18,t CO2/capita,World Bank WDI
+KOR,"South Korea",2023,WB.EN.ATM.CO2E.PC,11.34,t CO2/capita,World Bank WDI
+USA,"United States",2014,WB.EN.ATM.GHGT.KT.CE,6340200,kt CO2eq,World Bank WDI
+USA,"United States",2015,WB.EN.ATM.GHGT.KT.CE,6226800,kt CO2eq,World Bank WDI
+USA,"United States",2016,WB.EN.ATM.GHGT.KT.CE,6091400,kt CO2eq,World Bank WDI
+USA,"United States",2017,WB.EN.ATM.GHGT.KT.CE,6032100,kt CO2eq,World Bank WDI
+USA,"United States",2018,WB.EN.ATM.GHGT.KT.CE,6118500,kt CO2eq,World Bank WDI
+USA,"United States",2019,WB.EN.ATM.GHGT.KT.CE,5882300,kt CO2eq,World Bank WDI
+USA,"United States",2020,WB.EN.ATM.GHGT.KT.CE,5222400,kt CO2eq,World Bank WDI
+USA,"United States",2021,WB.EN.ATM.GHGT.KT.CE,5587100,kt CO2eq,World Bank WDI
+USA,"United States",2022,WB.EN.ATM.GHGT.KT.CE,5404200,kt CO2eq,World Bank WDI
+USA,"United States",2023,WB.EN.ATM.GHGT.KT.CE,5222400,kt CO2eq,World Bank WDI
+DEU,"Germany",2014,WB.EN.ATM.GHGT.KT.CE,902400,kt CO2eq,World Bank WDI
+DEU,"Germany",2015,WB.EN.ATM.GHGT.KT.CE,892100,kt CO2eq,World Bank WDI
+DEU,"Germany",2016,WB.EN.ATM.GHGT.KT.CE,891300,kt CO2eq,World Bank WDI
+DEU,"Germany",2017,WB.EN.ATM.GHGT.KT.CE,876500,kt CO2eq,World Bank WDI
+DEU,"Germany",2018,WB.EN.ATM.GHGT.KT.CE,843200,kt CO2eq,World Bank WDI
+DEU,"Germany",2019,WB.EN.ATM.GHGT.KT.CE,792600,kt CO2eq,World Bank WDI
+DEU,"Germany",2020,WB.EN.ATM.GHGT.KT.CE,729100,kt CO2eq,World Bank WDI
+DEU,"Germany",2021,WB.EN.ATM.GHGT.KT.CE,749800,kt CO2eq,World Bank WDI
+DEU,"Germany",2022,WB.EN.ATM.GHGT.KT.CE,696100,kt CO2eq,World Bank WDI
+DEU,"Germany",2023,WB.EN.ATM.GHGT.KT.CE,674300,kt CO2eq,World Bank WDI
+CHN,"China",2014,WB.EN.ATM.GHGT.KT.CE,12454000,kt CO2eq,World Bank WDI
+CHN,"China",2015,WB.EN.ATM.GHGT.KT.CE,12284000,kt CO2eq,World Bank WDI
+CHN,"China",2016,WB.EN.ATM.GHGT.KT.CE,12310000,kt CO2eq,World Bank WDI
+CHN,"China",2017,WB.EN.ATM.GHGT.KT.CE,12658000,kt CO2eq,World Bank WDI
+CHN,"China",2018,WB.EN.ATM.GHGT.KT.CE,13084000,kt CO2eq,World Bank WDI
+CHN,"China",2019,WB.EN.ATM.GHGT.KT.CE,13418000,kt CO2eq,World Bank WDI
+CHN,"China",2020,WB.EN.ATM.GHGT.KT.CE,13715000,kt CO2eq,World Bank WDI
+CHN,"China",2021,WB.EN.ATM.GHGT.KT.CE,14126000,kt CO2eq,World Bank WDI
+CHN,"China",2022,WB.EN.ATM.GHGT.KT.CE,13892000,kt CO2eq,World Bank WDI
+CHN,"China",2023,WB.EN.ATM.GHGT.KT.CE,13717000,kt CO2eq,World Bank WDI
+JPN,"Japan",2014,WB.EN.ATM.GHGT.KT.CE,1291400,kt CO2eq,World Bank WDI
+JPN,"Japan",2015,WB.EN.ATM.GHGT.KT.CE,1252100,kt CO2eq,World Bank WDI
+JPN,"Japan",2016,WB.EN.ATM.GHGT.KT.CE,1218400,kt CO2eq,World Bank WDI
+JPN,"Japan",2017,WB.EN.ATM.GHGT.KT.CE,1206200,kt CO2eq,World Bank WDI
+JPN,"Japan",2018,WB.EN.ATM.GHGT.KT.CE,1178100,kt CO2eq,World Bank WDI
+JPN,"Japan",2019,WB.EN.ATM.GHGT.KT.CE,1131200,kt CO2eq,World Bank WDI
+JPN,"Japan",2020,WB.EN.ATM.GHGT.KT.CE,1044800,kt CO2eq,World Bank WDI
+JPN,"Japan",2021,WB.EN.ATM.GHGT.KT.CE,1064200,kt CO2eq,World Bank WDI
+JPN,"Japan",2022,WB.EN.ATM.GHGT.KT.CE,1058300,kt CO2eq,World Bank WDI
+JPN,"Japan",2023,WB.EN.ATM.GHGT.KT.CE,1081200,kt CO2eq,World Bank WDI
+GBR,"United Kingdom",2014,WB.EN.ATM.GHGT.KT.CE,514200,kt CO2eq,World Bank WDI
+GBR,"United Kingdom",2015,WB.EN.ATM.GHGT.KT.CE,495800,kt CO2eq,World Bank WDI
+GBR,"United Kingdom",2016,WB.EN.ATM.GHGT.KT.CE,473200,kt CO2eq,World Bank WDI
+GBR,"United Kingdom",2017,WB.EN.ATM.GHGT.KT.CE,460100,kt CO2eq,World Bank WDI
+GBR,"United Kingdom",2018,WB.EN.ATM.GHGT.KT.CE,448500,kt CO2eq,World Bank WDI
+GBR,"United Kingdom",2019,WB.EN.ATM.GHGT.KT.CE,422800,kt CO2eq,World Bank WDI
+GBR,"United Kingdom",2020,WB.EN.ATM.GHGT.KT.CE,372400,kt CO2eq,World Bank WDI
+GBR,"United Kingdom",2021,WB.EN.ATM.GHGT.KT.CE,398200,kt CO2eq,World Bank WDI
+GBR,"United Kingdom",2022,WB.EN.ATM.GHGT.KT.CE,388100,kt CO2eq,World Bank WDI
+GBR,"United Kingdom",2023,WB.EN.ATM.GHGT.KT.CE,384200,kt CO2eq,World Bank WDI
+BRA,"Brazil",2014,WB.EN.ATM.GHGT.KT.CE,1218400,kt CO2eq,World Bank WDI
+BRA,"Brazil",2015,WB.EN.ATM.GHGT.KT.CE,1272100,kt CO2eq,World Bank WDI
+BRA,"Brazil",2016,WB.EN.ATM.GHGT.KT.CE,1198300,kt CO2eq,World Bank WDI
+BRA,"Brazil",2017,WB.EN.ATM.GHGT.KT.CE,1161200,kt CO2eq,World Bank WDI
+BRA,"Brazil",2018,WB.EN.ATM.GHGT.KT.CE,1148500,kt CO2eq,World Bank WDI
+BRA,"Brazil",2019,WB.EN.ATM.GHGT.KT.CE,1142800,kt CO2eq,World Bank WDI
+BRA,"Brazil",2020,WB.EN.ATM.GHGT.KT.CE,1072400,kt CO2eq,World Bank WDI
+BRA,"Brazil",2021,WB.EN.ATM.GHGT.KT.CE,1098200,kt CO2eq,World Bank WDI
+BRA,"Brazil",2022,WB.EN.ATM.GHGT.KT.CE,1078100,kt CO2eq,World Bank WDI
+BRA,"Brazil",2023,WB.EN.ATM.GHGT.KT.CE,1066800,kt CO2eq,World Bank WDI
