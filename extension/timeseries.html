@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visual Climate — Timeseries Explorer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="setup-screen" class="setup-screen" style="display:none;">
+  <h2>Visual Climate — Timeseries Explorer</h2>
+  <p style="margin-bottom:16px;color:#4A4A6A;font-size:12px;">Supabase 연결 정보 입력</p>
+  <input type="text" id="input-url" placeholder="Supabase URL">
+  <input type="text" id="input-key" placeholder="Supabase Key">
+  <button id="btn-save-config">Connect</button>
+  <p id="setup-error" style="color:#E5484D;font-size:11px;margin-top:8px;"></p>
+</div>
+
+<div id="loading" class="loading" style="display:none;">
+  <div class="spinner"></div>
+  <span>Loading time-series data...</span>
+</div>
+
+<div id="empty-state" class="empty-state" style="display:none;">
+  <p>Select a country to explore its climate time-series.</p>
+</div>
+
+<div id="ts-main" style="display:none;">
+  <!-- Country Header (compact) -->
+  <div style="padding:12px 16px;display:flex;align-items:center;gap:8px;border-bottom:1px solid #E5E7EB;">
+    <span id="ts-flag" style="font-size:24px;"></span>
+    <span id="ts-name" style="font-weight:600;font-size:15px;"></span>
+    <span id="ts-iso3" style="font-size:11px;color:#8888A0;"></span>
+  </div>
+
+  <!-- Controls -->
+  <div class="ts-controls" style="padding:12px 16px;">
+    <select id="ts-group">
+      <option value="emissions">Emissions</option>
+      <option value="fuel">Fuel Breakdown</option>
+      <option value="sector">Sector (Climate TRACE)</option>
+      <option value="energy">Energy</option>
+      <option value="economy">Economy</option>
+      <option value="resilience">Resilience</option>
+      <option value="other_ghg">Other GHG</option>
+    </select>
+    <select id="ts-indicator"></select>
+  </div>
+
+  <!-- Chart Area (pure SVG) -->
+  <div id="ts-chart" class="ts-chart-area"></div>
+
+  <!-- Data Table -->
+  <div id="ts-table" style="padding:8px 16px;overflow-x:auto;"></div>
+
+  <div class="vc-footer">
+    Data: <a href="https://visualclimate.org" target="_blank">visualclimate.org</a> Supabase
+  </div>
+</div>
+
+<script src="https://tableau.github.io/extensions-api/lib/tableau.extensions.1.latest.js"></script>
+<script src="shared.js"></script>
+<script src="timeseries-app.js"></script>
+</body>
+</html>

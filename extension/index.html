@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visual Climate — Climate Card</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Setup Screen (Supabase 미설정시) -->
+<div id="setup-screen" class="setup-screen" style="display:none;">
+  <h2>Visual Climate — Climate Card</h2>
+  <p style="margin-bottom:16px;color:#4A4A6A;font-size:12px;">
+    Supabase 연결 정보를 입력하세요. 한 번만 설정하면 워크북에 저장됩니다.
+  </p>
+  <input type="text" id="input-url" placeholder="Supabase URL (https://xxx.supabase.co)">
+  <input type="text" id="input-key" placeholder="Supabase anon key or service key">
+  <button id="btn-save-config">Connect</button>
+  <p id="setup-error" style="color:#E5484D;font-size:11px;margin-top:8px;"></p>
+</div>
+
+<!-- Loading -->
+<div id="loading" class="loading" style="display:none;">
+  <div class="spinner"></div>
+  <span>Loading climate data...</span>
+</div>
+
+<!-- Empty State -->
+<div id="empty-state" class="empty-state" style="display:none;">
+  <p>Select a country on the dashboard to view its Climate Card.</p>
+  <p style="font-size:11px;color:#8888A0;margin-top:8px;">
+    The extension detects ISO3 from filters or selected marks.
+  </p>
+</div>
+
+<!-- Climate Card -->
+<div id="climate-card" class="climate-card" style="display:none;">
+  <!-- Header -->
+  <div class="card-header">
+    <span id="card-flag" class="card-flag"></span>
+    <div>
+      <div id="card-name" class="card-country-name"></div>
+      <div id="card-meta" class="card-meta"></div>
+    </div>
+  </div>
+
+  <!-- Score Hero -->
+  <div class="score-hero">
+    <div>
+      <span id="card-score" class="score-big"></span>
+      <span class="score-unit">/100</span>
+    </div>
+    <span id="card-grade" class="grade-badge"></span>
+    <div>
+      <span id="card-class" class="class-pill"></span>
+      <div id="card-rank" class="rank-text" style="margin-top:4px;"></div>
+    </div>
+  </div>
+
+  <!-- View Toggle -->
+  <div style="display:flex;gap:8px;margin-bottom:12px;">
+    <button id="btn-bars" class="ts-controls" onclick="showView('bars')"
+            style="padding:4px 12px;border:1px solid #E5E7EB;border-radius:6px;font-size:11px;cursor:pointer;background:#0066FF;color:white;">Bars</button>
+    <button id="btn-radar" class="ts-controls" onclick="showView('radar')"
+            style="padding:4px 12px;border:1px solid #E5E7EB;border-radius:6px;font-size:11px;cursor:pointer;background:white;">Radar</button>
+  </div>
+
+  <!-- Domain Bars -->
+  <div id="domain-bars" class="domain-section">
+    <h3>Domain Breakdown</h3>
+    <div id="domain-bar-list"></div>
+  </div>
+
+  <!-- Radar Chart -->
+  <div id="domain-radar" class="radar-container" style="display:none;"></div>
+
+  <!-- Key Insights -->
+  <div id="insights" class="insights"></div>
+
+  <!-- Footer -->
+  <div class="vc-footer">
+    Data: <a href="https://visualclimate.org" target="_blank">visualclimate.org</a> |
+    Sources: World Bank, OWID, Ember, ND-GAIN, Climate TRACE
+  </div>
+</div>
+
+<!-- Tableau Extensions API -->
+<script src="https://tableau.github.io/extensions-api/lib/tableau.extensions.1.latest.js"></script>
+
+<script src="shared.js"></script>
+<script src="radar-chart.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

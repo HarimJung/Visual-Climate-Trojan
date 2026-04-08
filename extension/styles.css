@@ -1,0 +1,329 @@
+/**
+ * styles.css — Visual Climate Tableau Extension
+ * brand-config.md 색상 + Inter/JetBrains Mono 폰트 기반
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --vc-primary: #0066FF;
+  --vc-changer: #00A67E;
+  --vc-starter: #F59E0B;
+  --vc-talker: #E5484D;
+  --vc-critical: #7F1D1D;
+  --vc-bg: #FFFFFF;
+  --vc-section-bg: #F8F9FA;
+  --vc-text: #1A1A2E;
+  --vc-text-secondary: #4A4A6A;
+  --vc-text-muted: #8888A0;
+  --vc-border: #E5E7EB;
+  --vc-missing: #CCCCCC;
+
+  --vc-emissions: #E5484D;
+  --vc-energy: #0066FF;
+  --vc-economy: #8B5CF6;
+  --vc-responsibility: #F59E0B;
+  --vc-resilience: #00A67E;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--vc-bg);
+  color: var(--vc-text);
+  font-size: 13px;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+/* ———— Setup Screen ———— */
+.setup-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 24px;
+  text-align: center;
+}
+.setup-screen h2 { font-size: 18px; margin-bottom: 16px; }
+.setup-screen input {
+  width: 100%;
+  max-width: 400px;
+  padding: 8px 12px;
+  border: 1px solid var(--vc-border);
+  border-radius: 6px;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.setup-screen button {
+  padding: 8px 24px;
+  background: var(--vc-primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.setup-screen button:hover { opacity: 0.9; }
+
+/* ———— Loading / Empty ———— */
+.loading, .empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 200px;
+  color: var(--vc-text-muted);
+  font-size: 14px;
+}
+.spinner {
+  width: 32px; height: 32px;
+  border: 3px solid var(--vc-border);
+  border-top-color: var(--vc-primary);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin-bottom: 12px;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ———— Climate Card (Extension 1) ———— */
+.climate-card {
+  padding: 16px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.card-flag { font-size: 32px; }
+.card-country-name { font-size: 18px; font-weight: 700; }
+.card-meta { font-size: 11px; color: var(--vc-text-muted); }
+
+.score-hero {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background: var(--vc-section-bg);
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+.score-big {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1;
+}
+.score-unit { font-size: 14px; color: var(--vc-text-muted); font-weight: 400; }
+.grade-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  font-size: 22px;
+  font-weight: 700;
+}
+.class-pill {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  color: white;
+}
+.rank-text {
+  font-size: 12px;
+  color: var(--vc-text-secondary);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* ———— Domain Bars ———— */
+.domain-section {
+  margin-bottom: 16px;
+}
+.domain-section h3 {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--vc-text-secondary);
+}
+.domain-bar-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+.domain-label {
+  width: 100px;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--vc-text-secondary);
+  text-align: right;
+}
+.domain-bar-track {
+  flex: 1;
+  height: 20px;
+  background: #F1F5F9;
+  border-radius: 4px;
+  position: relative;
+  overflow: visible;
+}
+.domain-bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.6s ease;
+}
+.domain-bar-avg {
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  width: 2px;
+  background: #1A1A2E;
+  opacity: 0.3;
+}
+.domain-bar-value {
+  width: 44px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: right;
+}
+
+/* ———— Radar Container ———— */
+.radar-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+/* ———— Key Insights ———— */
+.insights {
+  padding: 12px;
+  background: var(--vc-section-bg);
+  border-radius: 8px;
+  border-left: 3px solid var(--vc-primary);
+  font-size: 12px;
+  color: var(--vc-text-secondary);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+.insights strong { color: var(--vc-text); }
+
+/* ———— Timeseries (Extension 2) ———— */
+.ts-controls {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+  padding: 0 16px;
+}
+.ts-controls select, .ts-controls button {
+  padding: 6px 12px;
+  border: 1px solid var(--vc-border);
+  border-radius: 6px;
+  font-size: 12px;
+  background: white;
+  cursor: pointer;
+}
+.ts-controls button.active {
+  background: var(--vc-primary);
+  color: white;
+  border-color: var(--vc-primary);
+}
+
+.ts-chart-area {
+  padding: 0 16px;
+  height: calc(100vh - 120px);
+  min-height: 300px;
+}
+.ts-chart-area svg { width: 100%; height: 100%; }
+
+/* ———— NDC Tracker (Extension 3) ———— */
+.ndc-card {
+  padding: 16px;
+  max-width: 520px;
+  margin: 0 auto;
+}
+.ndc-header { margin-bottom: 12px; }
+.ndc-kpi-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.ndc-kpi {
+  flex: 1;
+  padding: 10px;
+  background: var(--vc-section-bg);
+  border-radius: 8px;
+  text-align: center;
+}
+.ndc-kpi-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 20px;
+  font-weight: 700;
+}
+.ndc-kpi-label {
+  font-size: 10px;
+  color: var(--vc-text-muted);
+  margin-top: 2px;
+}
+.ndc-gap-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+}
+.ndc-chart-area { margin-bottom: 16px; }
+.ndc-detail { font-size: 11px; color: var(--vc-text-muted); }
+.ndc-detail td { padding: 3px 8px; }
+
+/* ———— Footer ———— */
+.vc-footer {
+  padding: 8px 16px;
+  font-size: 10px;
+  color: var(--vc-text-muted);
+  text-align: right;
+  border-top: 1px solid var(--vc-border);
+}
+.vc-footer a {
+  color: var(--vc-primary);
+  text-decoration: none;
+}
+
+/* ———— Comparison Grid (multi-country) ———— */
+.comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  padding: 16px;
+}
+.comparison-mini-card {
+  padding: 12px;
+  border: 1px solid var(--vc-border);
+  border-radius: 8px;
+  text-align: center;
+}
+.comparison-mini-card .card-flag { font-size: 24px; }
+.comparison-mini-card .card-country-name { font-size: 14px; }
+.mini-domain-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 2px 0;
+}
+.mini-domain-label { width: 24px; font-size: 9px; color: var(--vc-text-muted); text-align: right; }
+.mini-bar-track { flex: 1; height: 8px; background: #F1F5F9; border-radius: 2px; }
+.mini-bar-fill { height: 100%; border-radius: 2px; }
+.mini-bar-value { width: 28px; font-size: 9px; font-family: 'JetBrains Mono', monospace; }
